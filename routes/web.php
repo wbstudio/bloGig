@@ -39,5 +39,8 @@ Route::get('admin/logout', [\App\Http\Controllers\AdminAuthController::class, 'l
 // ログイン後
 Route::prefix('admin')->middleware('auth:admins')->group(function(){
     //topページ
-    Route::get('home', [\App\Http\Controllers\AdminAuthController::class, 'adminHome'])->name('adminHome');
+    // Route::get('home', [\App\Http\Controllers\AdminAuthController::class, 'adminHome'])->name('adminHome');
+    Route::get('/home', function () {
+        return var_dump('ADMIN_HOME');
+    });
 });
