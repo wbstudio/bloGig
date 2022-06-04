@@ -37,8 +37,8 @@ glob.sync('**/*.scss', {cwd: 'resources/scss'}).map(function (file) {
 /**
  * image
  */
- mix.copyDirectory('resources/img', 'public/img')
- .version();
+//  mix.copyDirectory('resources/img', 'public/img')
+//  .version();
 
 /**
  * excel
