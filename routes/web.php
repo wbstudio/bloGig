@@ -32,15 +32,18 @@ Route::middleware([
 //  管理者権限ページ
 //******************************//
 // ログイン周り
-Route::get('admin', [\App\Http\Controllers\AdminAuthController::class, 'showLoginForm']);
-Route::post('admin', [\App\Http\Controllers\AdminAuthController::class, 'login']);
-Route::get('admin/logout', [\App\Http\Controllers\AdminAuthController::class, 'logout']);
+Route::get('admin', [\App\Http\Controllers\AdminAuthController::class, 'showLoginForm'])->name('admin.showLoginFOrm');
+Route::post('admin', [\App\Http\Controllers\AdminAuthController::class, 'login'])->name('admin.login');
+Route::get('admin/logout', [\App\Http\Controllers\AdminAuthController::class, 'logout'])->name('admin.logout');
 
 // ログイン後
 Route::prefix('admin')->middleware('auth:admins')->group(function(){
     //topページ
-    // Route::get('home', [\App\Http\Controllers\AdminAuthController::class, 'adminHome'])->name('adminHome');
-    Route::get('/home', function () {
-        return var_dump('ADMIN_HOME');
+    Route::get('/home', [\App\Http\Controllers\AdminAuthController::class, 'home'])->name('admin.home');
+
+    //記事管理
+    Route::group(['prefix' => 'article'], function () {
     });
+
 });
+

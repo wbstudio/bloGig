@@ -10,7 +10,7 @@ class AdminAuthController extends Controller
     public function showLoginForm() {
 
         // return view('Admin.Index.login');
-        return view('Admin.Auth.login');
+        return view('admin.auth.login');
 
     }
 
@@ -27,7 +27,7 @@ class AdminAuthController extends Controller
         ]);
     }
 
-    public function adminHome() {
-        return view('Admin.Auth.home');
+    public function home(Request $request) {
+        return view('admin.top.home');
     }
 }
