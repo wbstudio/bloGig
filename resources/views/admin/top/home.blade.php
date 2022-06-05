@@ -8,13 +8,13 @@
 @endsection
 @section('content')
 <textarea name="main" id="editor"></textarea>
-                <script>
-                    window.onload=function(){
-                        CKEDITOR.replace('editor',{
-                            filebrowserBrowseUrl:filemanager.ckBrowseUrl
-                        })
-                    }
-                    CKEDITOR.config.height=800;
-                </script>
+<script>
+    window.onload=function(){
+        CKEDITOR.replace('editor',{
+            filebrowserBrowseUrl:filemanager.ckBrowseUrl
+        })
+    }
+    CKEDITOR.config.height=600;
+</script>
 
 @endsection
