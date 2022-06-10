@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+
+    header {
+        background: radial-gradient(#ffffff,#93b5f5);
+        color:#000;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    footer {
+        background: radial-gradient(#ffffff,#93b5f5);
+        color:rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        width:1240px;
+        margin: 0 auto;
+        padding-top: 25px;
+
+        h2 {
+            background: #ecf2ff;
+            color:#000;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px;
+            text-align: center;
+            border-top: 3px solid #93b5f5;
+            border-bottom: 3px solid #93b5f5;
+        }
+    }
+    /*******************************
+    sidenavi
+    ********************************/
+    #sidenavi {
+        width:20%;
+        float:left;
+
+        ol {
+            list-style: none;
+            margin: 0 auto;
+            width:90%;
+            padding: 10px 0;
+            position: relative;
+            top:15px;
+
+            a {
+                text-decoration: none;
+            }
+
+            li {
+                padding: 10px;
+                color: rgb(39, 39, 39);
+                font-weight: bold;
+                background: #ecf2ff;
+                margin-bottom: 8px;
+                text-align: center;
+                border-radius: 3px;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+    }
+
+    /*******************************
+    common
+    ********************************/
+
+    #content {
+        width:80%;
+        min-height: 654px;
+
+        .list_top_area {
+            margin: 20px 0;
+
+            a.regist_link {
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background: #fff;
+                color: #303030;
+                padding: 5px 15px;
+                font-size: 12px;
+                text-decoration: none;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+
+            }
+        }
+
+        table.list {
+            width: 100%;
+            border-collapse: collapse;
+
+            th {
+                font-weight: normal;
+                font-size: 12px;
+                padding: 3px 5px;
+                background: #ecf2ff;
+            }
+
+            td {
+                font-weight: normal;
+                font-size: 12px;
+                padding: 3px 5px;
+
+                &.center {
+                    text-align: center;
+                }
+            }
+        }
+
+        table.regist_content,
+        table.edit_content {
+            width: 100%;
+            border-collapse: collapse;
+
+            th {
+                font-weight: normal;
+                font-size: 12px;
+                padding: 3px 5px;
+                background: #ecf2ff;
+            }
+
+            td {
+                font-weight: normal;
+                font-size: 12px;
+                padding: 3px 5px;
+
+                input.normal_text {
+                    width: 50%;
+                }
+
+                textarea.normal_text {
+                    width: 80%;
+                    height: 200px;
+                }
+            }
+        }
+
+        .button_area {
+            margin-top: 30px;
+            text-align: center;
+
+            button {
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background: #fff;
+                color: #303030;
+                padding: 10px 15px;
+                font-size: 12px;
+                width: 135px;
+                margin: 0 20px;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        p.validation {
+            font-size: 10px;
+            font-weight: bold;
+            color: #f00;
+        }
+    }
+
+}

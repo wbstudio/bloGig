@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  /*******************************
+  sidenavi
+  ********************************/
+  /*******************************
+  common
+  ********************************/
+}
+body header {
+  background: radial-gradient(#ffffff, #93b5f5);
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+}
+body footer {
+  background: radial-gradient(#ffffff, #93b5f5);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+body main {
+  display: flex;
+  width: 1240px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+body main h2 {
+  background: #ecf2ff;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  border-top: 3px solid #93b5f5;
+  border-bottom: 3px solid #93b5f5;
+}
+body #sidenavi {
+  width: 20%;
+  float: left;
+}
+body #sidenavi ol {
+  list-style: none;
+  margin: 0 auto;
+  width: 90%;
+  padding: 10px 0;
+  position: relative;
+  top: 15px;
+}
+body #sidenavi ol a {
+  text-decoration: none;
+}
+body #sidenavi ol li {
+  padding: 10px;
+  color: rgb(39, 39, 39);
+  font-weight: bold;
+  background: #ecf2ff;
+  margin-bottom: 8px;
+  text-align: center;
+  border-radius: 3px;
+}
+body #sidenavi ol li:hover {
+  opacity: 0.7;
+}
+body #content {
+  width: 80%;
+  min-height: 654px;
+}
+body #content .list_top_area {
+  margin: 20px 0;
+}
+body #content .list_top_area a.regist_link {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  color: #303030;
+  padding: 5px 15px;
+  font-size: 12px;
+  text-decoration: none;
+}
+body #content .list_top_area a.regist_link:hover {
+  opacity: 0.5;
+}
+body #content table.list {
+  width: 100%;
+  border-collapse: collapse;
+}
+body #content table.list th {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 3px 5px;
+  background: #ecf2ff;
+}
+body #content table.list td {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 3px 5px;
+}
+body #content table.list td.center {
+  text-align: center;
+}
+body #content table.regist_content,
+body #content table.edit_content {
+  width: 100%;
+  border-collapse: collapse;
+}
+body #content table.regist_content th,
+body #content table.edit_content th {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 3px 5px;
+  background: #ecf2ff;
+}
+body #content table.regist_content td,
+body #content table.edit_content td {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 3px 5px;
+}
+body #content table.regist_content td input.normal_text,
+body #content table.edit_content td input.normal_text {
+  width: 50%;
+}
+body #content table.regist_content td textarea.normal_text,
+body #content table.edit_content td textarea.normal_text {
+  width: 80%;
+  height: 200px;
+}
+body #content .button_area {
+  margin-top: 30px;
+  text-align: center;
+}
+body #content .button_area button {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  color: #303030;
+  padding: 10px 15px;
+  font-size: 12px;
+  width: 135px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+body #content .button_area button:hover {
+  opacity: 0.5;
+}
+body #content p.validation {
+  font-size: 10px;
+  font-weight: bold;
+  color: #f00;
+}
+
+/*# sourceMappingURL=common.css.map*/

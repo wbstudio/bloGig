@@ -45,5 +45,35 @@ Route::prefix('admin')->middleware('auth:admins')->group(function(){
     Route::group(['prefix' => 'article'], function () {
     });
 
+    //筆者管理
+    Route::group(['prefix' => 'auther'], function () {
+        Route::get('list', [\App\Http\Controllers\Page\Admin\AutherController::class, 'getList'])->name('auther.list');
+        Route::post('delete', [\App\Http\Controllers\Page\Admin\AutherController::class, 'autherDelete'])->name('auther.delete');
+        Route::get('/regist/form', [\App\Http\Controllers\Page\Admin\AutherController::class, 'registShowForm'])->name('auther.regist.showForm');
+        Route::post('/regist/confirm', [\App\Http\Controllers\Page\Admin\AutherController::class, 'registConfirm'])->name('auther.regist.confirm');
+        Route::post('/regist/execution', [\App\Http\Controllers\Page\Admin\AutherController::class, 'registExecution'])->name('auther.regist.execution');
+        Route::get('/edit/{id}', [\App\Http\Controllers\Page\Admin\AutherController::class, 'editShowForm'])->name('auther.edit.showForm');
+        Route::post('/edit/confirm', [\App\Http\Controllers\Page\Admin\AutherController::class, 'editConfirm'])->name('auther.edit.confirm');
+        Route::post('/edit/execution', [\App\Http\Controllers\Page\Admin\AutherController::class, 'editExecution'])->name('auther.edit.execution');
+    });
+
+    //カテゴリー管理
+    Route::group(['prefix' => 'category'], function () {
+        Route::get('list', [\App\Http\Controllers\Page\Admin\CategoryController::class, 'getList'])->name('category.list');
+        Route::post('delete', [\App\Http\Controllers\Page\Admin\CategoryController::class, 'delete'])->name('category.delete');
+        Route::get('/regist/form', [\App\Http\Controllers\Page\Admin\CategoryController::class, 'registShowForm'])->name('category.regist.showForm');
+        Route::post('/regist/confirm', [\App\Http\Controllers\Page\Admin\CategoryController::class, 'registConfirm'])->name('category.regist.confirm');
+        Route::post('/regist/execution', [\App\Http\Controllers\Page\Admin\CategoryController::class, 'registExecution'])->name('category.regist.execution');
+        Route::get('/edit/{id}', [\App\Http\Controllers\Page\Admin\CategoryController::class, 'editShowForm'])->name('category.edit.showForm');
+        Route::post('/edit/confirm', [\App\Http\Controllers\Page\Admin\CategoryController::class, 'editConfirm'])->name('category.edit.confirm');
+        Route::post('/edit/execution', [\App\Http\Controllers\Page\Admin\CategoryController::class, 'editExecution'])->name('category.edit.execution');
+    });
+
+
+    //Ajax
+    Route::group(['prefix' => 'ajax'], function () {
+        Route::get('delete/profile/image/{image}', [\App\Http\Controllers\Admin\AjaxController::class, 'deleteProfileImage'])->name('ajax.delete.profile.image');
+    });
+
 });
 
