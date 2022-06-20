@@ -16,6 +16,17 @@ class Common
         return $rArray;
     }
 
+    static public function separateComma($string) {
+
+        $rArray = null;
+
+        if (isset($string)) {
+            $rArray = explode(',', $string);
+        }
+        
+        return $rArray;
+    }
+
     public static function unlinkImage($filepath,$fileName)
     {
         $old_image = $filepath . $fileName;
@@ -42,4 +53,21 @@ class Common
         }
         return $ret;
     }
+
+    static public function dateSplit($string, $type) {
+        $ret = null;
+        if (isset($string)) {
+            $splitSpace = explode(' ', $string);
+            $splitHyphen = explode('-', $splitSpace[0]);
+            $splitColon = explode(':', $splitSpace[1]);
+
+            $ret[$type . '_year'] = $splitHyphen[0];
+            $ret[$type . '_month'] = $splitHyphen[1];
+            $ret[$type . '_day'] = $splitHyphen[2];
+            $ret[$type . '_hour'] = $splitColon[0];
+            $ret[$type . '_minute'] = $splitColon[1];
+        }        
+        return $ret;
+    }
+
 }

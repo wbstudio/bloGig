@@ -1,10 +1,8 @@
 @extends('admin.layout')
 @section('title', '筆者リスト')
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/adminAuther.css') }}">
 @endsection
-@section('css')
-<script src="{{ asset('js/admin/auther.min.js') }}"></script>
+@section('js')
 @endsection
 
 @section('content')

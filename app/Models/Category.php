@@ -37,7 +37,7 @@ class Category extends Model
         return $aList;
     }
 
-    public function insertCategory($inputData)
+    public function insertCategoryData($inputData)
     {
 
         $query = DB::table('categories');
@@ -76,7 +76,7 @@ class Category extends Model
         return $aData;
     }
 
-    public function updateCategory($inputData)
+    public function updateCategoryData($inputData)
     {
 
         $value = [
@@ -91,17 +91,15 @@ class Category extends Model
 
     public function deleteCategory($deleteIds)
     {
+        $value = [
+            'delete_flg' => config('const.DELETE_FLG_ON'),
+            'updated_at' => now(),
+        ];
+
         if (isset($deleteIds)) {
-            foreach ($deleteIds as $id) {
-                $query = DB::table('categories');
-                $query->where('id', $id);
-                $query->update(
-                    [
-                        'delete_flg' => config('const.DELETE_FLG_ON'),
-                        'updated_at' => now(),
-                    ]
-                );
-            }
+            $query = DB::table('categories');
+            $query->whereIn('id', $deleteIds);
+            $query->update($value);
         }
     }
 

@@ -16,8 +16,8 @@
                 <col style="width:80%;">
             </colgroup>
             <tr>
-                <th>名前</th>
-                <td>
+                <th class="last">名前</th>
+                <td class="last">
                     {{ $inputData['name'] }}
                     <input type="hidden" name="name" value="{{ $inputData['name'] }}">
                 </td>

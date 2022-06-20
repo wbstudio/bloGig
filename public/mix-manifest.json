@@ -1,8 +1,14 @@
 {
     "/js/app.js": "/js/app.js?id=7c7943a903395df57c19492fe318b73d",
     "/css/app.css": "/css/app.css?id=fff3704a98850ad9d3bf039e7a4d4ccb",
-    "/css/admin/common.css": "/css/admin/common.css?id=3d9b9db8f6e6b226674939a6a930b392",
-    "/css/admin/auther.css": "/css/admin/auther.css?id=b78e03fbec809a537f6774b2e6632c56",
+    "/css/admin/tag.css": "/css/admin/tag.css?id=be99fbadfa62b8b444a8c00883335576",
+    "/css/admin/common.css": "/css/admin/common.css?id=73e3d80871325ce47d16bfb56870248e",
+    "/css/admin/auther.css": "/css/admin/auther.css?id=68b329da9893e34099c7d8ad5cb9c940",
+    "/css/admin/article.css": "/css/admin/article.css?id=dfe86206e792731bd2e5c631ef515656",
+    "/js/admin/article/main.js": "/js/admin/article/main.js?id=9e8fadb3938b687d82385febc5e2e299",
     "/js/admin/auther/main.js": "/js/admin/auther/main.js?id=416a470c3085ea3d525749e755efa7d7",
-    "/js/bootstrap.js": "/js/bootstrap.js?id=dfb65e8eaedab655328f316486884b6a"
+    "/js/admin/pickUp/main.js": "/js/admin/pickUp/main.js?id=152274bb336e99a767e4d063ca8fd9f5",
+    "/js/admin/tag/main.js": "/js/admin/tag/main.js?id=ea939bfae676116b8af8236e2c9e965c",
+    "/js/bootstrap.js": "/js/bootstrap.js?id=dfb65e8eaedab655328f316486884b6a",
+    "/img/admin/common/pencil.svg": "/img/admin/common/pencil.svg?id=fd767b3d340441b6341940d034421a69"
 }

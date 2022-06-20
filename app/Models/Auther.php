@@ -135,18 +135,37 @@ class Auther extends Model
 
     public function deleteAuther($deleteIds)
     {
+        $value = [
+            'delete_flg' => config('const.DELETE_FLG_ON'),
+            'updated_at' => now(),
+        ];
+
         if (isset($deleteIds)) {
-            foreach ($deleteIds as $id) {
-                $query = DB::table('authers');
-                $query->where('id', $id);
-                $query->update(
-                    [
-                        'delete_flg' => config('const.DELETE_FLG_ON'),
-                        'updated_at' => now(),
-                    ]
-                );
-            }
+            $query = DB::table('authers');
+            $query->whereIn('id', $deleteIds);
+            $query->update($value);
         }
     }
 
+    public function getAutherDataList()
+    {
+        $columnList = [
+            'au.id',
+            'au.name',	
+            'au.category',
+        ];
+        $return = [];
+        $query = DB::table('authers as au');
+        $query->select($columnList);
+        $query->where('delete_flg', 0);
+        $aList = $query->get();
+
+        if (isset($aList)) {
+            foreach ($aList as $aData) {
+                $return[$aData->id]['name'] = $aData->name;
+                $return[$aData->id]['category'] = $aData->category;
+            }
+        }
+        return $return;
+    }
 }

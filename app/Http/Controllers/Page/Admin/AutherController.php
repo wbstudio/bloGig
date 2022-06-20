@@ -159,7 +159,7 @@ class AutherController extends Controller
             )
         );
     }
-    // //
+    //
     public function editExecution(Request $request) {
 
         $inputData = $request->input();

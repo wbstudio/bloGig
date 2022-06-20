@@ -44,8 +44,8 @@
                 </td>
             </tr>
             <tr>
-                <th>画像</th>
-                <td>
+                <th class="last">画像</th>
+                <td class="last">
                     @if (!empty($inputData['image']))
                         <img src="{{ asset('storage/profile/'.$inputData['image']) }}">
                     @endif

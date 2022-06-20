@@ -43,6 +43,15 @@ Route::prefix('admin')->middleware('auth:admins')->group(function(){
 
     //記事管理
     Route::group(['prefix' => 'article'], function () {
+        Route::get('list', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'getList'])->name('article.list');
+        Route::post('list', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'getList'])->name('article.list');
+        Route::post('delete', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'delete'])->name('article.delete');
+        Route::get('/regist/form', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'registShowForm'])->name('article.regist.showForm');
+        Route::post('/regist/confirm', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'registConfirm'])->name('article.regist.confirm');
+        Route::post('/regist/execution', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'registExecution'])->name('article.regist.execution');
+        Route::get('/edit/{id}', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'editShowForm'])->name('article.edit.showForm');
+        Route::post('/edit/confirm', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'editConfirm'])->name('article.edit.confirm');
+        Route::post('/edit/execution', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'editExecution'])->name('article.edit.execution');
     });
 
     //筆者管理
@@ -69,6 +78,27 @@ Route::prefix('admin')->middleware('auth:admins')->group(function(){
         Route::post('/edit/execution', [\App\Http\Controllers\Page\Admin\CategoryController::class, 'editExecution'])->name('category.edit.execution');
     });
 
+    //タグ管理
+    Route::group(['prefix' => 'tag'], function () {
+        Route::get('list', [\App\Http\Controllers\Page\Admin\TagController::class, 'getList'])->name('tag.list');
+        Route::post('regist', [\App\Http\Controllers\Page\Admin\TagController::class, 'regist'])->name('tag.regist');
+        Route::post('delete', [\App\Http\Controllers\Page\Admin\TagController::class, 'delete'])->name('tag.delete');
+        Route::get('edit/{id}/{name}', [\App\Http\Controllers\Page\Admin\TagController::class, 'edit']);
+    });
+
+    //カテゴリー管理
+    Route::group(['prefix' => 'pickUp'], function () {
+        Route::get('list', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'getList'])->name('pickUp.list');
+        Route::post('delete', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'delete'])->name('pickUp.delete');
+        Route::get('/regist/form', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'registShowForm'])->name('pickUp.regist.showForm');
+        Route::post('/regist/form', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'registShowForm'])->name('pickUp.regist.showForm');
+        Route::post('/regist/confirm', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'registConfirm'])->name('pickUp.regist.confirm');
+        Route::post('/regist/execution', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'registExecution'])->name('pickUp.regist.execution');
+        Route::get('/edit/form/{id}', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'editShowForm'])->name('pickUp.edit.showForm');
+        Route::post('/edit/form/{id}', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'editShowForm'])->name('pickUp.edit.showForm');
+        Route::post('/edit/confirm', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'editConfirm'])->name('pickUp.edit.confirm');
+        Route::post('/edit/execution', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'editExecution'])->name('pickUp.edit.execution');
+    });
 
     //Ajax
     Route::group(['prefix' => 'ajax'], function () {

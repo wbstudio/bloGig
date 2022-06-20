@@ -65,7 +65,7 @@ class CategoryController extends Controller
         } else {
             $request->session()->regenerateToken();
             $mdCategory = new Category;
-            $mdCategory->insertCategory($inputData);
+            $mdCategory->insertCategoryData($inputData);
         }
         return redirect()->route('category.list');
     }
@@ -116,7 +116,7 @@ class CategoryController extends Controller
         } else {
             $request->session()->regenerateToken();
             $mdCategory = new Category;
-            $mdCategory->updateCategory($inputData);
+            $mdCategory->updateCategoryData($inputData);
         }
         return redirect()->route('category.list');
     }

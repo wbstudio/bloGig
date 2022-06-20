@@ -23,6 +23,13 @@
                 'NEWS_PRIVATE' => 3,
                 'NEWS_RELEASE' => 4,
             ],
+            'ARTICLE_STATUS_NAME' => [
+                0 => 'blog執筆中', 
+                1 => 'blog非公開', 
+                2 => 'blog公開中', 
+                3 => 'news非公開', 
+                4 => 'news公開中', 
+            ],
         ],
         
         'AUTHER' => [
@@ -52,6 +59,11 @@
                 'COMING_SOON' => 2,
             ],
         ],
+        
+        'TAG' => [
+            'STATUS' => [
+                'RELEASE' => 0,
+            ],
+        ],
     ]
-
 ?>

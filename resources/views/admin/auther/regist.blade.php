@@ -1,10 +1,9 @@
 @extends('admin.layout')
 @section('title', '筆者登録')
 @section('css')
-<link rel="stylesheet" href="{{ mix('css/admin/auther.css') }}">
 @endsection
 @section('js')
-<script src="{{ mix('js/admin/auther/main.js') }}"></script>
+    <script src="{{ mix('js/admin/auther/main.js') }}"></script>
 @endsection
 
 @section('content')
@@ -44,14 +43,14 @@
                 </td>
             </tr>
             <tr>
-                <th>画像</th>
-                <td>
+                <th class="last">画像</th>
+                <td class="last">
                     <label class="img">
                         <input type="file" name="image" value="{{ old('image') }}" id="profile">
                         画像を選択
                     </label>
                     <p class="img_name">選択されていません</p>
-                    <img id="sumb" style="display: none;">
+                    <img id="sumb">
                     <input type="hidden" value="{{ old('image') }}" id="profile_old" name="profile_old">
                 </td>
             </tr>

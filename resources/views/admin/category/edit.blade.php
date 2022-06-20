@@ -19,8 +19,8 @@
                 <col style="width:80%;">
             </colgroup>
             <tr>
-                <th>名前</th>
-                <td>
+                <th class="last">名前</th>
+                <td class="last">
                     <input type="text" name="name" class="normal_text" value="@if (!empty(old('name'))){{ old('name') }}@else{{ $categoryData->name }}@endif">
                 </td>
             </tr>
