@@ -59,10 +59,10 @@
             <tr>
                 <th>筆者</th>
                 <td>
-                    <select class="auther" name="auther" disabled>
-                        <option value="">著者</option>
+                    <select class="auther" name="auther">
+                        <option value="" disabled>著者</option>
                         @foreach ($autherNameList as $id => $name)
-                            <option value="{{ $id }}" @if ($pickUpData->auther_id == $id) selected @endif>{{ $name }}</option>
+                            <option value="{{ $id }}" @if ($pickUpData->auther_id == $id) selected @endif disabled>{{ $name }}</option>
                         @endforeach
                     </select>
                     ※変更不可
@@ -71,10 +71,10 @@
             <tr>
                 <th>カテゴリー</th>
                 <td>
-                    <select class="category" name="category" disabled>
-                        <option value="">カテゴリー</option>
+                    <select class="category" name="category">
+                        <option value="" disabled>カテゴリー</option>
                             @foreach ($categoryNameList as $id => $name)
-                                <option value="{{ $id }}" @if ($pickUpData->category_id == $id) selected @endif>{{ $name }}</option>
+                                <option value="{{ $id }}" @if ($pickUpData->category_id == $id) selected @endif disabled>{{ $name }}</option>
                             @endforeach
                     </select>
                     ※変更不可
