@@ -101,4 +101,28 @@ class Tag extends Model
         return $return;
 
     }
+
+    public function getTagListArticleCall($tags)
+    {
+
+        $return = [];
+
+        $columnList = [
+            "id",
+            "name",
+            "status",
+            "delete_flg",
+            "created_at",
+            "updated_at",
+        ];
+        $query = DB::table('tags');
+        $query->select($columnList);
+        $query->where('delete_flg', config('const.DELETE_FLG_OFF'));
+        $query->whereIn('id', $tags);
+
+        $return = $query->get();
+
+        return $return;
+
+    }
 }

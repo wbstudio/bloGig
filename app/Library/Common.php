@@ -10,7 +10,7 @@ class Common
         $rArray = null;
 
         if (isset($string)) {
-            $rArray = explode('|', $string);
+            $rArray = explode(',', $string);
         }
         
         return $rArray;

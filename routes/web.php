@@ -13,19 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', [\App\Http\Controllers\Page\Front\TopController::class, 'topPage'])->name('front.topPage');
+Route::post('/search', [\App\Http\Controllers\Page\Front\ArticleController::class, 'searchArticleList'])->name('front.article.keyword');
+Route::get('/auther/{auther_id}', [\App\Http\Controllers\Page\Front\AutherController::class, 'autherDetail'])->name('front.auther.detail');
+Route::get('/auther/{auther_id}/category/{category_id}', [\App\Http\Controllers\Page\Front\ArticleController::class, 'searchArticleList'])->name('front.article.auther_category');
+Route::get('/article/{article_id}', [\App\Http\Controllers\Page\Front\ArticleController::class, 'articleDetail'])->name('front.article.detail');
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+// Route::middleware([
+//     'auth:sanctum',
+//     config('jetstream.auth_session'),
+//     'verified'
+// ])->group(function () {
+//     Route::get('/dashboard', function () {
+//         return view('dashboard');
+//     })->name('dashboard');
+// });
 
 
 //******************************//

@@ -181,4 +181,43 @@ class Article extends Model
 
         return $return;
     }
+
+    public function getArticleDetailById($id)
+    {
+        $columnList = [
+            "ar.id",
+            "ar.auther",
+            "ar.category",
+            "ar.tag",
+            "ar.title",
+            "ar.main",
+            "ar.heading",
+            "ar.eyecatch",
+            "ar.status",
+            "ar.count",
+            "ar.release_at",
+            "ar.end_at",
+            "ar.created_at",
+            "ar.updated_at",
+            "au.name as auther_name",
+            "ca.name as category_name",
+        ];
+
+        $query = DB::table('articles as ar');
+
+        $query->select($columnList);
+
+        $query->leftJoin('authers as au', 'au.id', '=', 'ar.auther');
+        $query->leftJoin('categories as ca', 'ca.id', '=', 'ar.category');
+
+        $query->where('ar.id', $id)
+            ->where('ar.delete_flg', config('const.DELETE_FLG_OFF'))
+            ->where('au.delete_flg', config('const.DELETE_FLG_OFF'))
+            ->where('ca.delete_flg', config('const.DELETE_FLG_OFF'));
+
+        $articleData = $query->first();
+
+        return $articleData;
+    }
+
 }

@@ -40,6 +40,9 @@ glob.sync('**/*.scss', {cwd: 'resources/scss'}).map(function (file) {
  mix.copyDirectory('resources/img/admin/common', 'public/img/admin/common')
  .version();
 
+ mix.copyDirectory('resources/img/front/pc', 'public/img/front/pc')
+ .version();
+
 /**
  * excel
  */

@@ -11,7 +11,7 @@ class Auther extends Model
 {
     use HasFactory;
 
-    public function getAutherList()
+    public function getAutherList($status = null)
     {
         $columnList = [
             'id',
@@ -29,7 +29,11 @@ class Auther extends Model
         $query = DB::table('authers');
         $query->select($columnList);
         $query->where('delete_flg', 0);
-        $query->orderByDesc('id');
+        if (!$status) {
+            $query->orderByDesc('id');
+        } else {
+            $query->orderBy('id');
+        }
         $aList = $query->get();
 
         if (isset($aList)) {
@@ -55,7 +59,7 @@ class Auther extends Model
         ];
 
         if (isset($inputData['category'])) {
-            $value['category'] = join('|', $inputData['category']);
+            $value['category'] = join(',', $inputData['category']);
         } 
         $query->insert($value);
     }
@@ -123,7 +127,7 @@ class Auther extends Model
         ];
 
         if (isset($inputData['category'])) {
-            $value['category'] = join('|', $inputData['category']);
+            $value['category'] = join(',', $inputData['category']);
         } else {
             $value['category'] = null;
         }
