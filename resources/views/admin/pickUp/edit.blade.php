@@ -43,7 +43,7 @@
     <form method="POST" action="{{route('pickUp.edit.confirm')}}" class="regist">
     @csrf
         @if ($errors->first('name'))   <!-- ここ追加 -->
-            <p class="validation">※{{$errors->first('name')}}</p>
+            <p class="validation">※{{ $errors->first('name') }}</p>
         @endif
         <table class="edit_content">
             <colgroup>
