@@ -1,0 +1,238 @@
+/*
+Blogger
+*/
+section#blogger {
+
+    .blogger_odd {
+        padding-right: 20px;
+        margin: 50px 0 0px;
+        color: var(--main-color);
+        opacity: 0;
+
+        img {
+            border-radius: 50%;
+            width:135px;
+            height: 135px;
+            align: left;
+            position: relative;
+            left: 15px;
+        }
+
+        .blogger_name {
+            font-weight: bold;
+            font-family: Montserrat;
+            float: right;
+            position: relative;
+            font-size: 36px;
+            text-align: right;
+            width: 590px;
+            border-bottom: 3px solid var(--main-color);
+            line-height: 1em;
+            top: 12px;
+            padding-right: 10px;
+            z-index: 1;
+        }
+
+        .blogger_explain {
+            width: 600px;
+            position: relative;
+            top: -74px;
+            left: 175px;
+
+            .blogger_explain_title {
+                font-family: Montserrat;
+                padding-bottom: 3px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .blogger_explain_detail {
+                font-size: 12px;
+                margin: 0 0 12px;
+                font-weight: 600;
+                word-break: break-all;
+            }
+        }
+
+        .to_blogger_category {
+            text-align: center;
+            position: relative;
+            top: -55px;
+
+            a {
+                border: 2px solid var(--main-color);
+                padding: 10px 20px;
+                text-decoration: none;
+                color: var(--main-color);
+                font-weight: bold;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .blogger_even {
+        padding-left: 20px;
+        margin: 50px 0 0px;
+        color: var(--main-color);
+
+        img {
+            border-radius: 50%;
+            width:135px;
+            height: 135px;
+            align: right;
+            margin-left: 18px;
+        }
+
+        .blogger_name {
+            font-weight: bold;
+            font-family: Montserrat;
+            float: left;
+            position: relative;
+            font-size: 36px;
+            text-align: left;
+            width: 594px;
+            border-bottom: 3px solid var(--main-color);
+            line-height: 1em;
+            top: 12px;
+            padding-left: 10px;
+            z-index: 1;
+        }
+
+        .blogger_explain {
+            width: 600px;
+            position: relative;
+            top: -74px;
+
+            .blogger_explain_title {
+                font-family: Montserrat;
+                padding-bottom: 3px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .blogger_explain_detail {
+                font-size: 12px;
+                margin: 0 0 12px;
+                font-weight: 600;
+                word-break: break-all;
+            }
+            
+            
+        }
+        .to_blogger_category {
+            text-align: center;
+            position: relative;
+            top: -55px;
+
+            a {
+                border: 2px solid var(--main-color);
+                padding: 10px 20px;
+                text-decoration: none;
+                color: var(--main-color);
+                font-weight: bold;
+                border-radius: 4px;
+            }
+        }
+    }
+
+}
+
+section#category {
+    .category {
+        table.category_table {
+            width: 100%;
+
+            td {
+                padding: 15px 0;
+                a {
+                    text-decoration: none;
+                    color: #373737;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: Montserrat;
+                }
+            }
+        }
+    }
+}
+
+section#this_blog_is {
+    .big_font {
+        font-size: 1.5em;
+        font-family: 'RocknRoll One', sans-serif;
+    }
+    .red {
+        color:#dd4c44;
+        font-weight: bold;
+    }
+    .to_link_tbi {
+        text-align: center;
+        margin-top: 40px;
+
+        a {
+            border: 2px solid #373737;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #373737;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+    }    
+}
+
+section#how_to{
+    ul {
+        font-weight: bold;
+        font-size: 1.2em;
+        list-style: square;
+    }
+    .to_link_tbi {
+        text-align: center;
+        margin-top: 40px;
+
+        a {
+            border: 2px solid var(--main-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            color: var(--main-color);
+            font-weight: bold;
+            border-radius: 4px;
+        }
+    }
+    
+}
+
+section#inquiry{
+
+    .red {
+        color:#dd4c44;    
+    }
+    
+    .big_font {
+        font-size: 1.5em;
+        font-weight: bold;
+        font-family: 'RocknRoll One', sans-serif;
+    }
+
+    a {
+        color:#2556f7;
+    }
+
+    .to_link_con {
+        margin-top: 35px;
+    }
+
+    .to_link_tbi {
+        text-align: center;
+        margin-top: 40px;
+        a {
+            border: 2px solid var(--main-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            color: var(--main-color);
+            font-weight: bold;
+            border-radius: 4px;
+        }        
+    }
+}
+

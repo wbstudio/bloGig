@@ -1,0 +1,61 @@
+#auther_detail .blogger_even {
+  padding-left: 20px;
+  margin: 50px 0 0px;
+  color: var(--main-color);
+}
+#auther_detail .blogger_even img {
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  align: right;
+  margin-left: 18px;
+}
+#auther_detail .blogger_even .blogger_name {
+  font-weight: bold;
+  font-family: Montserrat;
+  float: left;
+  position: relative;
+  font-size: 36px;
+  text-align: left;
+  width: 594px;
+  border-bottom: 3px solid var(--main-color);
+  line-height: 1em;
+  top: 12px;
+  padding-left: 10px;
+  z-index: 1;
+}
+#auther_detail .blogger_even .blogger_explain {
+  width: 600px;
+  position: relative;
+  top: -55px;
+}
+#auther_detail .blogger_even .blogger_explain .blogger_explain_title {
+  font-family: Montserrat;
+  padding-bottom: 3px;
+  font-size: 20px;
+  font-weight: 500;
+}
+#auther_detail .blogger_even .blogger_explain .blogger_explain_detail {
+  font-size: 12px;
+  margin: 0 0 35px;
+  font-weight: 600;
+  word-break: break-all;
+}
+#auther_detail .blogger_even .blogger_explain ul {
+  padding-left: 20px;
+}
+#auther_detail .blogger_even .to_blogger_category {
+  text-align: center;
+  position: relative;
+  top: -55px;
+}
+#auther_detail .blogger_even .to_blogger_category a {
+  border: 2px solid var(--main-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=auther.css.map*/

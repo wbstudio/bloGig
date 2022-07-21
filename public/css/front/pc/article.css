@@ -1,0 +1,125 @@
+#article_list .list_area .article_list_mass {
+  width: 100%;
+  display: flex;
+  border: 1px solid #dfdfdf;
+  padding: 3px;
+  margin-bottom: 30px;
+}
+#article_list .list_area .article_list_mass:hover {
+  opacity: 0.7;
+}
+#article_list .list_area .article_list_mass .article_list_image_area {
+  padding: 0 5px;
+}
+#article_list .list_area .article_list_mass .article_list_image_area img {
+  width: 190px;
+}
+#article_list .list_area .article_list_mass .article_list_image_area .article_list_base {
+  color: #373737;
+  font-size: 12px;
+  padding-left: 4px;
+  padding-top: 3px;
+}
+#article_list .list_area .article_list_mass .article_list_image_area .article_list_base a {
+  color: #373737;
+}
+#article_list .list_area .article_list_mass .article_list_explain_area {
+  position: relative;
+}
+#article_list .list_area .article_list_mass .article_list_explain_area .article_list_title {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid #dfdfdf;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-all;
+}
+#article_list .list_area .article_list_mass .article_list_explain_area .article_list_title a {
+  color: #373737;
+  text-decoration: none;
+}
+#article_list .list_area .article_list_mass .article_list_explain_area .article_list_explain {
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  line-height: 1.2;
+  margin: 5px 0;
+}
+#article_list .list_area .article_list_mass .article_list_explain_area .article_list_explain a {
+  color: #5a5a5a;
+  text-decoration: none;
+}
+#article_list .list_area .article_list_mass .article_list_explain_area .article_list_tag_list {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  height: 48px;
+}
+#article_list .list_area .article_list_mass .article_list_explain_area .tag_single {
+  font-size: 10px;
+  display: inline-block;
+  padding: 3.5px 5px;
+  line-height: 1;
+  text-decoration: none;
+  color: #737373;
+  background-color: #FFF;
+  border: 1px solid #dfdfdf;
+  border-radius: 2em;
+}
+#article_list .list_area .article_list_mass .article_list_explain_area .tag_single:before {
+  content: "#";
+}
+#article_list .list_area .article_list_mass .article_list_explain_area .article_list_view_count {
+  font-size: 12px;
+  color: #5a5a5a;
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+}
+
+#article_detail .article_title {
+  font-size: 36px;
+  line-height: 1.4;
+  padding: 12px;
+  margin: 0 0 5px;
+}
+#article_detail .article_setting .article_setting_table {
+  font-size: 12px;
+  color: #5a5a5a;
+  width: 100%;
+  margin: 0 0 2px;
+}
+#article_detail .article_setting .article_setting_table td.article_date,
+#article_detail .article_setting .article_setting_table td.article_count {
+  text-align: end;
+}
+#article_detail .article_setting .article_tags {
+  margin: 0 0 40px;
+}
+#article_detail .article_setting .article_tags .tag_single {
+  font-size: 10px;
+  display: inline-block;
+  padding: 3.5px 5px;
+  line-height: 1;
+  text-decoration: none;
+  color: #737373;
+  background-color: #FFF;
+  border: 1px solid #dfdfdf;
+  border-radius: 2em;
+}
+#article_detail .article_setting .article_tags .tag_single:before {
+  content: "#";
+}
+#article_detail #article_area .main img {
+  max-width: 100%;
+}
+#article_detail #article_area .main table {
+  border-collapse: collapse;
+}
+
+/*# sourceMappingURL=article.css.map*/

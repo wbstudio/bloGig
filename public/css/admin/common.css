@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  /*******************************
+  sidenavi
+  ********************************/
+  /*******************************
+  common
+  ********************************/
+}
+body header {
+  background: radial-gradient(#ffffff, #93b5f5);
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+}
+body footer {
+  background: radial-gradient(#ffffff, #93b5f5);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+body main {
+  display: flex;
+  width: 1240px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+body main h2 {
+  background: #ecf2ff;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  border-top: 3px solid #93b5f5;
+  border-bottom: 3px solid #93b5f5;
+}
+body #sidenavi {
+  width: 20%;
+  float: left;
+}
+body #sidenavi ol {
+  list-style: none;
+  margin: 0 auto;
+  width: 90%;
+  padding: 10px 0;
+  position: relative;
+  top: 15px;
+}
+body #sidenavi ol a {
+  text-decoration: none;
+}
+body #sidenavi ol li {
+  padding: 10px;
+  color: rgb(39, 39, 39);
+  font-weight: bold;
+  background: #ecf2ff;
+  margin-bottom: 8px;
+  text-align: center;
+  border-radius: 3px;
+}
+body #sidenavi ol li:hover {
+  opacity: 0.7;
+}
+body #content {
+  width: 80%;
+  min-height: 654px;
+}
+body #content .list_top_area {
+  margin: 20px 0;
+}
+body #content .list_top_area a.regist_link {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  color: #303030;
+  padding: 5px 15px;
+  font-size: 12px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+body #content .list_top_area a.regist_link:hover {
+  opacity: 0.5;
+}
+body #content .list_top_area form.select {
+  display: inline-block;
+  float: right;
+}
+body #content .list_top_area form.select .select_area {
+  display: inline-block;
+}
+body #content .list_top_area form.select .select_area select {
+  width: 180px;
+  height: 30px;
+}
+body #content .list_top_area form.select .select_area input {
+  width: 80px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  color: #303030;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+body #content .list_top_area form.select .select_area input:hover {
+  opacity: 0.5;
+}
+body #content table.list {
+  width: 100%;
+  border-collapse: collapse;
+}
+body #content table.list th {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 3px 5px;
+  background: #ecf2ff;
+}
+body #content table.list td {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 3px 5px;
+}
+body #content table.list td.center {
+  text-align: center;
+}
+body #content table.regist_content,
+body #content table.edit_content {
+  width: 100%;
+  border-collapse: collapse;
+}
+body #content table.regist_content th,
+body #content table.edit_content th {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 3px 5px;
+  background: #ecf2ff;
+  border-top: 1px solid #dedede;
+}
+body #content table.regist_content th.last,
+body #content table.edit_content th.last {
+  border-bottom: 1px solid #dedede;
+}
+body #content table.regist_content td,
+body #content table.edit_content td {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 3px 5px;
+  border-top: 1px solid #dedede;
+}
+body #content table.regist_content td.last,
+body #content table.edit_content td.last {
+  border-bottom: 1px solid #dedede;
+}
+body #content table.regist_content td select,
+body #content table.edit_content td select {
+  height: 30px;
+}
+body #content table.regist_content td select.auther, body #content table.regist_content td select.category, body #content table.regist_content td select.status,
+body #content table.edit_content td select.auther,
+body #content table.edit_content td select.category,
+body #content table.edit_content td select.status {
+  width: 200px;
+}
+body #content table.regist_content td select.article,
+body #content table.edit_content td select.article {
+  width: 100%;
+}
+body #content table.regist_content td select.year,
+body #content table.edit_content td select.year {
+  width: 80px;
+}
+body #content table.regist_content td select.month, body #content table.regist_content td select.day, body #content table.regist_content td select.hour, body #content table.regist_content td select.minute,
+body #content table.edit_content td select.month,
+body #content table.edit_content td select.day,
+body #content table.edit_content td select.hour,
+body #content table.edit_content td select.minute {
+  width: 50px;
+}
+body #content table.regist_content td input[type=text],
+body #content table.edit_content td input[type=text] {
+  width: 100%;
+  height: 30px;
+}
+body #content table.regist_content td textarea,
+body #content table.edit_content td textarea {
+  width: 100%;
+  height: 100px;
+}
+body #content table.regist_content td label.img,
+body #content table.edit_content td label.img {
+  padding: 3px 10px;
+  color: #ffffff;
+  background-color: #5e5e5e;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body #content table.regist_content td input[type=file],
+body #content table.edit_content td input[type=file] {
+  display: none;
+}
+body #content table.regist_content td p,
+body #content table.edit_content td p {
+  margin: 10px 0 0 0;
+}
+body #content table.regist_content td img#sumb,
+body #content table.edit_content td img#sumb {
+  display: none;
+}
+body #content .button_area {
+  margin-top: 30px;
+  text-align: center;
+}
+body #content .button_area button {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  color: #303030;
+  padding: 10px 15px;
+  font-size: 12px;
+  min-width: 135px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+body #content .button_area button:hover {
+  opacity: 0.5;
+}
+body #content p.validation {
+  font-size: 10px;
+  font-weight: bold;
+  color: #f00;
+}
+
+/*# sourceMappingURL=common.css.map*/

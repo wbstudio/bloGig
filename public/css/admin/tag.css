@@ -1,0 +1,22 @@
+.tag_list {
+  margin-top: 55px;
+}
+.tag_list .tag_detail {
+  padding: 5px 10px;
+  margin: 5px;
+  background: #ecf2ff;
+  border-radius: 10px;
+  display: inline-block;
+}
+.tag_list .tag_detail img {
+  width: 10px;
+  cursor: pointer;
+}
+.tag_list .tag_detail input[type=text] {
+  display: none;
+}
+.tag_list .tag_detail input[type=button] {
+  display: none;
+}
+
+/*# sourceMappingURL=tag.css.map*/

@@ -1,0 +1,200 @@
+/*
+Blogger
+*/
+section#blogger .blogger_odd {
+  padding-right: 20px;
+  margin: 50px 0 0px;
+  color: var(--main-color);
+  opacity: 0;
+}
+section#blogger .blogger_odd img {
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  align: left;
+  position: relative;
+  left: 15px;
+}
+section#blogger .blogger_odd .blogger_name {
+  font-weight: bold;
+  font-family: Montserrat;
+  float: right;
+  position: relative;
+  font-size: 36px;
+  text-align: right;
+  width: 590px;
+  border-bottom: 3px solid var(--main-color);
+  line-height: 1em;
+  top: 12px;
+  padding-right: 10px;
+  z-index: 1;
+}
+section#blogger .blogger_odd .blogger_explain {
+  width: 600px;
+  position: relative;
+  top: -74px;
+  left: 175px;
+}
+section#blogger .blogger_odd .blogger_explain .blogger_explain_title {
+  font-family: Montserrat;
+  padding-bottom: 3px;
+  font-size: 20px;
+  font-weight: 500;
+}
+section#blogger .blogger_odd .blogger_explain .blogger_explain_detail {
+  font-size: 12px;
+  margin: 0 0 12px;
+  font-weight: 600;
+  word-break: break-all;
+}
+section#blogger .blogger_odd .to_blogger_category {
+  text-align: center;
+  position: relative;
+  top: -55px;
+}
+section#blogger .blogger_odd .to_blogger_category a {
+  border: 2px solid var(--main-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+  border-radius: 4px;
+}
+section#blogger .blogger_even {
+  padding-left: 20px;
+  margin: 50px 0 0px;
+  color: var(--main-color);
+}
+section#blogger .blogger_even img {
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  align: right;
+  margin-left: 18px;
+}
+section#blogger .blogger_even .blogger_name {
+  font-weight: bold;
+  font-family: Montserrat;
+  float: left;
+  position: relative;
+  font-size: 36px;
+  text-align: left;
+  width: 594px;
+  border-bottom: 3px solid var(--main-color);
+  line-height: 1em;
+  top: 12px;
+  padding-left: 10px;
+  z-index: 1;
+}
+section#blogger .blogger_even .blogger_explain {
+  width: 600px;
+  position: relative;
+  top: -74px;
+}
+section#blogger .blogger_even .blogger_explain .blogger_explain_title {
+  font-family: Montserrat;
+  padding-bottom: 3px;
+  font-size: 20px;
+  font-weight: 500;
+}
+section#blogger .blogger_even .blogger_explain .blogger_explain_detail {
+  font-size: 12px;
+  margin: 0 0 12px;
+  font-weight: 600;
+  word-break: break-all;
+}
+section#blogger .blogger_even .to_blogger_category {
+  text-align: center;
+  position: relative;
+  top: -55px;
+}
+section#blogger .blogger_even .to_blogger_category a {
+  border: 2px solid var(--main-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+section#category .category table.category_table {
+  width: 100%;
+}
+section#category .category table.category_table td {
+  padding: 15px 0;
+}
+section#category .category table.category_table td a {
+  text-decoration: none;
+  color: #373737;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Montserrat;
+}
+
+section#this_blog_is .big_font {
+  font-size: 1.5em;
+  font-family: "RocknRoll One", sans-serif;
+}
+section#this_blog_is .red {
+  color: #dd4c44;
+  font-weight: bold;
+}
+section#this_blog_is .to_link_tbi {
+  text-align: center;
+  margin-top: 40px;
+}
+section#this_blog_is .to_link_tbi a {
+  border: 2px solid #373737;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #373737;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+section#how_to ul {
+  font-weight: bold;
+  font-size: 1.2em;
+  list-style: square;
+}
+section#how_to .to_link_tbi {
+  text-align: center;
+  margin-top: 40px;
+}
+section#how_to .to_link_tbi a {
+  border: 2px solid var(--main-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+section#inquiry .red {
+  color: #dd4c44;
+}
+section#inquiry .big_font {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "RocknRoll One", sans-serif;
+}
+section#inquiry a {
+  color: #2556f7;
+}
+section#inquiry .to_link_con {
+  margin-top: 35px;
+}
+section#inquiry .to_link_tbi {
+  text-align: center;
+  margin-top: 40px;
+}
+section#inquiry .to_link_tbi a {
+  border: 2px solid var(--main-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=top.css.map*/
