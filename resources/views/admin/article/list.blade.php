@@ -16,7 +16,7 @@
      @endif
      <div class="list_top_area">
          <a href="{{ route('article.regist.showForm') }}" class="regist_link">{{ __('新規作成') }}</a>
-        <form method="POST" action="{{ route('article.list') }}" class="select">
+        <form method="POST" action="{{ route('article.list.search') }}" class="select">
         @csrf
             <div id="narrow_down">
                 <div class="select_area">

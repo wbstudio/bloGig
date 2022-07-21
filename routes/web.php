@@ -49,7 +49,7 @@ Route::prefix('admin')->middleware('auth:admins')->group(function(){
     //記事管理
     Route::group(['prefix' => 'article'], function () {
         Route::get('list', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'getList'])->name('article.list');
-        Route::post('list', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'getList'])->name('article.list');
+        Route::post('list', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'getList'])->name('article.list.search');
         Route::post('delete', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'delete'])->name('article.delete');
         Route::get('/regist/form', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'registShowForm'])->name('article.regist.showForm');
         Route::post('/regist/confirm', [\App\Http\Controllers\Page\Admin\ArticleController::class, 'registConfirm'])->name('article.regist.confirm');
