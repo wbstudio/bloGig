@@ -10,7 +10,7 @@
 <div class="container">
     <h2>PickUp登録ページ</h2>
     <div class="list_top_area">
-        <form method="POST" action="{{ route('pickUp.regist.showForm') }}" class="select">
+        <form method="POST" action="{{ route('pickUp.regist.showForm.search') }}" class="select">
         @csrf
             <div id="narrow_down">
                 <div class="select_area">
