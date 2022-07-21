@@ -96,11 +96,11 @@ Route::prefix('admin')->middleware('auth:admins')->group(function(){
         Route::get('list', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'getList'])->name('pickUp.list');
         Route::post('delete', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'delete'])->name('pickUp.delete');
         Route::get('/regist/form', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'registShowForm'])->name('pickUp.regist.showForm');
-        Route::post('/regist/form', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'registShowForm'])->name('pickUp.regist.showForm');
+        Route::post('/regist/form', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'registShowForm'])->name('pickUp.regist.showForm.search');
         Route::post('/regist/confirm', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'registConfirm'])->name('pickUp.regist.confirm');
         Route::post('/regist/execution', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'registExecution'])->name('pickUp.regist.execution');
         Route::get('/edit/form/{id}', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'editShowForm'])->name('pickUp.edit.showForm');
-        Route::post('/edit/form/{id}', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'editShowForm'])->name('pickUp.edit.showForm');
+        Route::post('/edit/form/{id}', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'editShowForm'])->name('pickUp.edit.showForm.search');
         Route::post('/edit/confirm', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'editConfirm'])->name('pickUp.edit.confirm');
         Route::post('/edit/execution', [\App\Http\Controllers\Page\Admin\PickUpController::class, 'editExecution'])->name('pickUp.edit.execution');
     });
